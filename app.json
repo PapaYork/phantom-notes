@@ -7,6 +7,24 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "fonts": [
+      {
+        "asset": "./assets/fonts/Montserrat-Light.ttf",
+        "family": "Montserrat-Light"
+      },
+      {
+        "asset": "./assets/fonts/Montserrat-Regular.ttf",
+        "family": "Montserrat-Regular"
+      },
+      {
+        "asset": "./assets/fonts/Montserrat-SemiBold.ttf",
+        "family": "Montserrat-SemiBold"
+      },
+      {
+        "asset": "./assets/fonts/Montserrat-Bold.ttf",
+        "family": "Montserrat-Bold"
+      }
+    ],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -20,7 +38,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.pha"
     },
     "web": {
       "favicon": "./assets/favicon.png"
