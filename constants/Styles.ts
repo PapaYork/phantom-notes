@@ -1,53 +1,58 @@
-import { StyleSheet, TextStyle, ViewStyle, TouchableOpacity } from 'react-native';
-import { Colors } from './Colors';
+import {
+  StyleSheet,
+  TextStyle,
+  ViewStyle,
+  TouchableOpacity,
+} from "react-native";
+import { Colors } from "./Colors";
 
 // Typography styles
 export const Typography = {
   h1: {
     fontSize: 32,
-    fontWeight: 'bold' as const,
+    fontWeight: "bold" as const,
     color: Colors.textPrimary,
     lineHeight: 40,
   },
   h2: {
     fontSize: 24,
-    fontWeight: 'bold' as const,
+    fontWeight: "bold" as const,
     color: Colors.textPrimary,
     lineHeight: 32,
   },
   h3: {
     fontSize: 20,
-    fontWeight: '600' as const,
+    fontWeight: "600" as const,
     color: Colors.textPrimary,
     lineHeight: 28,
   },
   h4: {
     fontSize: 18,
-    fontWeight: '600' as const,
+    fontWeight: "600" as const,
     color: Colors.textPrimary,
     lineHeight: 24,
   },
   body: {
     fontSize: 16,
-    fontWeight: 'normal' as const,
+    fontWeight: "normal" as const,
     color: Colors.textSecondary,
     lineHeight: 22,
   },
   bodySmall: {
     fontSize: 14,
-    fontWeight: 'normal' as const,
+    fontWeight: "normal" as const,
     color: Colors.textSecondary,
     lineHeight: 20,
   },
   caption: {
     fontSize: 12,
-    fontWeight: 'normal' as const,
+    fontWeight: "normal" as const,
     color: Colors.textTertiary,
     lineHeight: 16,
   },
   button: {
     fontSize: 16,
-    fontWeight: '600' as const,
+    fontWeight: "600" as const,
     color: Colors.textPrimary,
     lineHeight: 22,
   },
@@ -60,8 +65,8 @@ export const Buttons = {
     borderRadius: 12,
     paddingVertical: 16,
     paddingHorizontal: 24,
-    alignItems: 'center' as const,
-    justifyContent: 'center' as const,
+    alignItems: "center" as const,
+    justifyContent: "center" as const,
     shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
@@ -75,8 +80,8 @@ export const Buttons = {
     borderRadius: 12,
     paddingVertical: 16,
     paddingHorizontal: 24,
-    alignItems: 'center' as const,
-    justifyContent: 'center' as const,
+    alignItems: "center" as const,
+    justifyContent: "center" as const,
   },
   outline: {
     backgroundColor: Colors.transparent,
@@ -85,16 +90,16 @@ export const Buttons = {
     borderRadius: 12,
     paddingVertical: 16,
     paddingHorizontal: 24,
-    alignItems: 'center' as const,
-    justifyContent: 'center' as const,
+    alignItems: "center" as const,
+    justifyContent: "center" as const,
   },
   ghost: {
     backgroundColor: Colors.transparent,
     borderRadius: 12,
     paddingVertical: 16,
     paddingHorizontal: 24,
-    alignItems: 'center' as const,
-    justifyContent: 'center' as const,
+    alignItems: "center" as const,
+    justifyContent: "center" as const,
   },
   small: {
     paddingVertical: 12,
@@ -197,7 +202,7 @@ export const Cards = {
     borderRadius: 20,
     paddingVertical: 12,
     paddingHorizontal: 16,
-    maxWidth: '80%',
+    maxWidth: "80%",
     shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
@@ -213,21 +218,21 @@ export const Layout = {
     backgroundColor: Colors.background,
   },
   row: {
-    flexDirection: 'row' as const,
-    alignItems: 'center' as const,
+    flexDirection: "row" as const,
+    alignItems: "center" as const,
   },
   column: {
-    flexDirection: 'column' as const,
+    flexDirection: "column" as const,
   },
   center: {
-    alignItems: 'center' as const,
-    justifyContent: 'center' as const,
+    alignItems: "center" as const,
+    justifyContent: "center" as const,
   },
   spaceBetween: {
-    justifyContent: 'space-between' as const,
+    justifyContent: "space-between" as const,
   },
   spaceAround: {
-    justifyContent: 'space-around' as const,
+    justifyContent: "space-around" as const,
   },
   padding: {
     padding: 20,
@@ -258,13 +263,13 @@ export const ChatStyles = {
   bubbleSelf: {
     ...Cards.chat,
     backgroundColor: Colors.chatBubbleSelf,
-    alignSelf: 'flex-end' as const,
+    alignSelf: "flex-end" as const,
     marginVertical: 4,
   },
   bubbleOther: {
     ...Cards.chat,
     backgroundColor: Colors.chatBubbleOther,
-    alignSelf: 'flex-start' as const,
+    alignSelf: "flex-start" as const,
     marginVertical: 4,
   },
   bubbleDisappearing: {
@@ -303,8 +308,8 @@ export const TabBarStyles = {
     height: 90,
   },
   tab: {
-    alignItems: 'center' as const,
-    justifyContent: 'center' as const,
+    alignItems: "center" as const,
+    justifyContent: "center" as const,
     paddingVertical: 8,
   },
   tabLabel: {
@@ -351,5 +356,25 @@ export const Styles = {
   TabBarStyles,
   Animations,
 } as const;
+
+export const defaultStyles = StyleSheet.create({
+  block: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    marginHorizontal: 14,
+    marginTop: 20,
+  },
+  item: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 10,
+    gap: 10,
+  },
+  separator: {
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: Colors.border,
+    marginLeft: 50,
+  },
+});
 
 export default Styles;

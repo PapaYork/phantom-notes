@@ -1,8 +1,10 @@
 {
   "expo": {
-    "name": "pha",
+    "name": "Phantom Notes",
+    "slug": "phantom-notes",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "phantom-notes",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
@@ -31,7 +33,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "y",
+      "bundleIdentifier": "com.anonymous.phantomnotes",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -42,7 +44,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.pha"
+      "package": "com.anonymous.phantomnotes"
     },
     "web": {
       "favicon": "./assets/favicon.png"

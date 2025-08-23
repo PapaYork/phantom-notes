@@ -1,205 +1,74 @@
-# 🌟 Star Wars Chat App
+# Phantom Notes
 
-A modern, dark-themed chat messaging application built with React Native and Expo, featuring disappearing messages and Star Wars-inspired design elements.
+A React Native app built with Expo Router for seamless navigation and modern mobile development.
 
-## ✨ Features
-
-### 🚀 Core Functionality
-
-- **Real-time Chat Messaging** - Send and receive messages with friends
-- **Disappearing Messages** - Messages that automatically vanish after a set time
-- **Typing Indicators** - See when someone is typing
-- **Message Status** - Track message delivery and read status
-- **Online Status** - See who's currently online
-
-### 🎨 Design & Theme
-
-- **Dark Theme** - Sleek dark interface throughout the app
-- **Star Wars Accents** - Golden yellow accent colors inspired by lightsabers
-- **Modern UI** - Clean, intuitive interface with smooth animations
-- **Responsive Design** - Optimized for both mobile and tablet devices
-
-### 🔧 Technical Features
-
-- **Expo Router** - File-based navigation system
-- **TypeScript** - Full type safety and better development experience
-- **Custom Components** - Reusable UI components with consistent styling
-- **Animation Support** - Smooth transitions and micro-interactions
-
-## 🏗️ Project Structure
+## Project Structure
 
 ```
-pha/
-├── app/                    # Expo Router app directory
-│   ├── (tabs)/            # Tab navigation screens
-│   │   ├── _layout.tsx    # Tab layout configuration
-│   │   ├── chats.tsx      # Chats list screen
-│   │   ├── contacts.tsx   # Contacts management screen
-│   │   └── settings.tsx   # App settings screen
-│   ├── chat/              # Chat conversation screens
-│   │   └── [id].tsx       # Dynamic chat conversation
-│   └── _layout.tsx        # Root app layout
-├── constants/              # App constants and styling
-│   ├── Colors.ts          # Color scheme definitions
-│   └── Styles.ts          # Component styles and typography
-├── App.tsx                 # Main app entry point
-└── package.json            # Dependencies and scripts
+app/
+├── _layout.tsx          # Root layout (Stack navigator)
+├── index.tsx            # Root redirect to tabs
+└── (tabs)/              # Tab navigation group
+    ├── _layout.tsx      # Tabs layout
+    ├── chats/           # Chats tab
+    │   └── index.tsx    # Chats screen
+    ├── feed/            # Feed tab
+    │   └── index.tsx    # Feed screen
+    └── settings/        # Settings tab
+        └── index.tsx    # Settings screen
 ```
 
-## 🎯 Screens
+## Features
 
-### 📱 Chats Tab
+- **Expo Router**: File-based routing for React Native
+- **Tab Navigation**: Bottom tab navigation with icons
+- **Clean Architecture**: Modular component structure
+- **TypeScript**: Full TypeScript support
+- **Safe Area**: Proper safe area handling for all devices
 
-- List of all chat conversations
-- Unread message indicators
-- Online status for contacts
-- Floating action button for new chats
+## Getting Started
 
-### 👥 Contacts Tab
-
-- Searchable contacts list
-- Contact status and phone numbers
-- Quick chat access buttons
-- Online/offline indicators
-
-### ⚙️ Settings Tab
-
-- User profile management
-- App preferences (dark mode, read receipts, etc.)
-- Privacy and security settings
-- Disappearing message configuration
-
-### 💬 Chat Conversation
-
-- Real-time messaging interface
-- Disappearing message support
-- Typing indicators
-- Message status tracking
-- Star Wars-themed content
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v16 or higher)
-- Yarn package manager
-- Expo CLI
-- iOS Simulator or Android Emulator (optional)
-
-### Installation
-
-1. **Clone the repository**
+1. Install dependencies:
 
    ```bash
-   git clone <repository-url>
-   cd pha
-   ```
-
-2. **Install dependencies**
-
-   ```bash
+   npm install
+   # or
    yarn install
    ```
 
-3. **Start the development server**
+2. Start the development server:
 
    ```bash
+   npm start
+   # or
    yarn start
    ```
 
-4. **Run on device/simulator**
-
+3. Run on device/simulator:
    ```bash
-   # iOS
-   yarn ios
-
-   # Android
-   yarn android
-
-   # Web
-   yarn web
+   npm run ios
+   npm run android
    ```
 
-## 🎨 Customization
+## Dependencies
 
-### Colors
+- Expo SDK 53
+- React Native 0.79.5
+- Expo Router 5.1.5
+- React Native Safe Area Context
+- React Native Screens
 
-The app uses a comprehensive color system defined in `constants/Colors.ts`:
+## Development
 
-- **Primary Colors**: Deep blacks and dark grays
-- **Accent Colors**: Star Wars-inspired golden yellows
-- **Status Colors**: Success, warning, error, and info colors
-- **Chat Colors**: Special colors for different message types
+This project uses Expo Router for navigation, which provides:
 
-### Styles
+- File-based routing
+- Type-safe navigation
+- Deep linking support
+- Web support out of the box
 
-Component styles are organized in `constants/Styles.ts`:
+The app structure follows Expo Router conventions with:
 
-- **Typography**: Consistent text styles and sizes
-- **Buttons**: Various button styles (primary, secondary, outline, ghost)
-- **Cards**: Card and surface styling
-- **Layout**: Common layout utilities
-- **Animations**: Reusable animation configurations
-
-## 🔧 Dependencies
-
-### Core Dependencies
-
-- `expo` - React Native development platform
-- `expo-router` - File-based routing for Expo
-- `react-native` - React Native framework
-- `@expo/vector-icons` - Icon library
-
-### Navigation & UI
-
-- `react-native-safe-area-context` - Safe area handling
-- `react-native-screens` - Native screen components
-- `expo-linking` - Deep linking support
-
-## 📱 Platform Support
-
-- ✅ iOS
-- ✅ Android
-- ✅ Web (with some limitations)
-
-## 🎭 Star Wars Theme
-
-The app features:
-
-- **Character Names**: Luke Skywalker, Princess Leia, Han Solo, etc.
-- **Star Wars Quotes**: Iconic lines from the movies
-- **Golden Accents**: Lightsaber-inspired yellow highlights
-- **Dark Aesthetic**: Space-themed dark interface
-
-## 🔮 Future Enhancements
-
-- [ ] Voice messages
-- [ ] Video calls
-- [ ] File sharing
-- [ ] Group chats
-- [ ] End-to-end encryption
-- [ ] Push notifications
-- [ ] Message reactions
-- [ ] Custom themes
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Star Wars franchise for inspiration
-- Expo team for the amazing development platform
-- React Native community for continuous improvements
-
----
-
-**May the Force be with you!** ⚡
+- `(tabs)` for tab navigation
+- `_layout.tsx` files for navigation configuration
+- `index.tsx` files for default screens
