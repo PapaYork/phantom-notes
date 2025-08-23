@@ -8,7 +8,7 @@ import { ThemeProvider, useTheme } from "./contexts/ThemeContext";
 
 // Import your screen components
 import ChatsScreen from "./app/(tabs)/chats";
-import fyp from "./app/(tabs)/myfeed";
+import MyFeed from "./app/(tabs)/myfeed";
 import ProfileScreen from "./app/(tabs)/profile";
 
 const Tab = createBottomTabNavigator();
@@ -43,7 +43,7 @@ const AppContent = () => {
         />
         <Tab.Screen
           name="myfeed"
-          component={fyp}
+          component={MyFeed}
           options={{
             title: "My Feed",
             tabBarIcon: ({ color, size }) => (

@@ -9,7 +9,7 @@ import {
 import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "../../contexts/ThemeContext";
 
-const fyp = () => {
+const MyFeed = () => {
   const { theme } = useTheme();
 
   return (
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default fyp;
+export default MyFeed;
