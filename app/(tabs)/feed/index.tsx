@@ -20,14 +20,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
   },
   header: {
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: "#E5E5EA",
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: "#E9EDEF",
+    height: 44, // WhatsApp header height
+    justifyContent: "center",
   },
   title: {
-    fontSize: 34,
-    fontWeight: "bold",
+    fontSize: 17,
+    fontWeight: "600",
     color: "#000000",
+    lineHeight: 22,
   },
   content: {
     flex: 1,

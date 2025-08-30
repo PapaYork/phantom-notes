@@ -372,8 +372,7 @@ export const defaultStyles = StyleSheet.create({
   },
   separator: {
     height: StyleSheet.hairlineWidth,
-    backgroundColor: Colors.border,
-    marginLeft: 50,
+    marginLeft: 60,
   },
 });
 

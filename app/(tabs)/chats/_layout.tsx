@@ -10,16 +10,12 @@ const Layout = () => {
         name="index"
         options={{
           title: "",
-          headerLargeTitle: false,
-          headerTransparent: false,
+          headerLargeTitle: true,
           headerLeft: () => (
             <View style={styles.headerLeft}>
               <Text style={styles.headerTitle}>Chats</Text>
             </View>
           ),
-          headerStyle: {
-            backgroundColor: "#fff",
-          },
           headerTintColor: Colors.accent,
           headerRight: () => (
             <View style={styles.headerRight}>
