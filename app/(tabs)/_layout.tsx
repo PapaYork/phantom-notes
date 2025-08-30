@@ -8,19 +8,20 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors.accent,
-        tabBarInactiveTintColor: "#8E8E93",
+        tabBarInactiveTintColor: "#666666",
         tabBarStyle: {
-          backgroundColor: "#FFFFFF",
-          height: 83, // WhatsApp tab bar height
-          paddingBottom: 20, // Safe area padding
+          backgroundColor: "#000000",
+          height: 70,
+          paddingBottom: 15,
           paddingTop: 8,
-          borderTopWidth: StyleSheet.hairlineWidth,
-          borderTopColor: "#E9EDEF",
+          borderTopWidth: 0,
+          elevation: 0,
+          shadowOpacity: 0,
         },
         tabBarLabelStyle: {
-          fontSize: 10,
-          fontWeight: "500",
-          marginTop: 4,
+          fontSize: 11,
+          fontWeight: "600",
+          marginTop: 2,
         },
         tabBarIconStyle: {
           marginTop: 4,

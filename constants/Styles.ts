@@ -6,7 +6,6 @@ import {
 } from "react-native";
 import { Colors } from "./Colors";
 
-// Typography styles
 export const Typography = {
   h1: {
     fontSize: 32,
@@ -58,7 +57,6 @@ export const Typography = {
   },
 } as const;
 
-// Button styles
 export const Buttons = {
   primary: {
     backgroundColor: Colors.accent,
@@ -113,7 +111,6 @@ export const Buttons = {
   },
 } as const;
 
-// Text styles
 export const Texts = {
   primary: {
     ...Typography.body,
@@ -141,7 +138,6 @@ export const Texts = {
   },
 } as const;
 
-// Input styles
 export const Inputs = {
   primary: {
     backgroundColor: Colors.surface,
@@ -178,7 +174,6 @@ export const Inputs = {
   },
 } as const;
 
-// Card styles
 export const Cards = {
   primary: {
     backgroundColor: Colors.card,
@@ -211,7 +206,6 @@ export const Cards = {
   },
 } as const;
 
-// Layout styles
 export const Layout = {
   container: {
     flex: 1,
@@ -254,7 +248,6 @@ export const Layout = {
   },
 } as const;
 
-// Chat specific styles
 export const ChatStyles = {
   bubble: {
     ...Cards.chat,
@@ -297,7 +290,6 @@ export const ChatStyles = {
   },
 } as const;
 
-// Tab bar styles
 export const TabBarStyles = {
   container: {
     backgroundColor: Colors.surface,
@@ -322,7 +314,6 @@ export const TabBarStyles = {
   },
 } as const;
 
-// Animation styles
 export const Animations = {
   fadeIn: {
     opacity: 1,
@@ -344,7 +335,6 @@ export const Animations = {
   },
 } as const;
 
-// Combined styles object
 export const Styles = {
   Typography,
   Buttons,

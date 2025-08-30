@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   textContainer: {
     flex: 1,
     gap: 2,
-    marginRight: 8, // Space for right section
+    marginRight: 8,
   },
   name: {
     fontSize: 16,
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   },
   messageContainer: {
     flex: 1,
-    minWidth: 100, // Important for text truncation
+    minWidth: 100,
   },
   message: {
     fontSize: 14,
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   rightSection: {
     alignItems: "flex-end",
     gap: 8,
-    minWidth: 60, // Reserve space for date and badge
+    minWidth: 60,
   },
   date: {
     fontSize: 12,
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
   separator: {
     height: StyleSheet.hairlineWidth,
     backgroundColor: "#E9EDEF",
-    marginLeft: 87, // 16 (padding) + 55 (avatar) + 16 (gap)
+    marginLeft: 87,
   },
 });
 

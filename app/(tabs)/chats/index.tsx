@@ -14,7 +14,6 @@ import chats from "../../../assets/data/chats.json";
 const ChatsScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      {/* WhatsApp-style Header */}
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Chats</Text>
         <View style={styles.headerActions}>
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: "#E9EDEF",
-    height: 44, // WhatsApp header height
+    height: 44,
   },
   headerTitle: {
     fontSize: 17,

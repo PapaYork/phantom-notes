@@ -27,7 +27,6 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    // Load saved theme preference
     loadThemePreference();
   }, []);
 

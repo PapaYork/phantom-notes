@@ -19,7 +19,7 @@ export default function SettingsLayout() {
           headerStyle: {
             backgroundColor: "#FFFFFF",
           },
-          headerTintColor: "#25D366", // WhatsApp green
+          headerTintColor: "#25D366",
           headerRight: () => (
             <View style={styles.headerRight}>
               <TouchableOpacity style={styles.headerButton}>
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   headerTitle: {
-    fontSize: 28, // WhatsApp header title size
+    fontSize: 28,
     fontWeight: "700",
     color: "#000000",
     lineHeight: 34,

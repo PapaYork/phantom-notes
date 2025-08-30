@@ -20,11 +20,11 @@ const Layout = () => {
           headerTitleStyle: {
             fontSize: 24,
             fontWeight: "bold",
-            color: Colors.accent,
+            color: "white",
           },
           headerRight: () => (
             <TouchableOpacity>
-              <Feather name="camera" size={27} color={Colors.accent} />
+              <Feather name="camera" size={25} color={"white"} />
             </TouchableOpacity>
           ),
         }}

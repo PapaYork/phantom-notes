@@ -1,61 +1,50 @@
 export const Colors = {
-  // Dark theme colors
-  primary: "#0A0A0A", // Deep black
-  secondary: "#1A1A1A", // Dark gray
-  tertiary: "#2A2A2A", // Medium dark gray
-  quaternary: "#3A3A3A", // Lighter dark gray
+  primary: "#0A0A0A",
+  secondary: "#1A1A1A",
+  tertiary: "#2A2A2A",
+  quaternary: "#3A3A3A",
 
-  // Star Wars inspired yellow accents
-  accent: "#FFD700", // Bright gold yellow
-  accentLight: "#FFE55C", // Light yellow
-  accentDark: "#B8860B", // Dark goldenrod
-  accentHover: "#FFED4E", // Hover state yellow
+  accent: "#FFD700",
+  accentLight: "#FFE55C",
+  accentDark: "#B8860B",
+  accentHover: "#FFED4E",
 
-  // Utility colors
-  transparent: "transparent", // Transparent color
+  transparent: "transparent",
 
-  // Text colors
-  textPrimary: "#000000", // White text
-  textSecondary: "#E0E0E0", // Light gray text
-  textTertiary: "#B0B0B0", // Medium gray text
-  textMuted: "#808080", // Muted gray text
+  textPrimary: "#000000",
+  textSecondary: "#E0E0E0",
+  textTertiary: "#B0B0B0",
+  textMuted: "#808080",
 
-  // Background colors
-  background: "#0A0A0A", // Main background
-  surface: "#1A1A1A", // Surface background
-  card: "#2A2A2A", // Card background
-  modal: "#1F1F1F", // Modal background
+  background: "#0A0A0A",
+  surface: "#1A1A1A",
+  card: "#2A2A2A",
+  modal: "#1F1F1F",
 
-  // Status colors
-  success: "#4CAF50", // Green
-  warning: "#FF9800", // Orange
-  error: "#F44336", // Red
-  info: "#2196F3", // Blue
+  success: "#4CAF50",
+  warning: "#FF9800",
+  error: "#F44336",
+  info: "#2196F3",
 
-  // Chat specific colors
-  chatBubble: "#2A2A2A", // Chat bubble background
-  chatBubbleSelf: "#1E3A8A", // Own chat bubble
-  chatBubbleOther: "#2A2A2A", // Other's chat bubble
-  chatBubbleDisappearing: "#B8860B", // Disappearing message bubble
+  chatBubble: "#2A2A2A",
+  chatBubbleSelf: "#1E3A8A",
+  chatBubbleOther: "#2A2A2A",
+  chatBubbleDisappearing: "#B8860B",
 
-  // Border colors
-  border: "#3A3A3A", // Border color
-  borderLight: "#4A4A4A", // Light border
-  borderDark: "#2A2A2A", // Dark border
+  border: "#3A3A3A",
+  borderLight: "#4A4A4A",
+  borderDark: "#2A2A2A",
 
-  // Shadow colors
-  shadow: "rgba(0, 0, 0, 0.5)", // Shadow color
-  shadowLight: "rgba(0, 0, 0, 0.3)", // Light shadow
+  shadow: "rgba(0, 0, 0, 0.5)",
+  shadowLight: "rgba(0, 0, 0, 0.3)",
 
-  // Overlay colors
-  overlay: "rgba(0, 0, 0, 0.7)", // Overlay color
-  overlayLight: "rgba(0, 0, 0, 0.5)", // Light overlay
+  overlay: "rgba(0, 0, 0, 0.7)",
+  overlayLight: "rgba(0, 0, 0, 0.5)",
 
-  // Gradient colors
-  gradientStart: "#0A0A0A", // Gradient start
-  gradientEnd: "#1A1A1A", // Gradient end
-  accentGradientStart: "#FFD700", // Accent gradient start
-  accentGradientEnd: "#B8860B", // Accent gradient end
+  gradientStart: "#0A0A0A",
+  gradientEnd: "#1A1A1A",
+  accentGradientStart: "#FFD700",
+  accentGradientEnd: "#B8860B",
 } as const;
 
 export type ColorScheme = typeof Colors;
