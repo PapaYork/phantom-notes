@@ -11,6 +11,7 @@ const Layout = () => {
         options={{
           title: "",
           headerLargeTitle: true,
+          headerShown: true,
           headerLeft: () => (
             <View style={styles.headerLeft}>
               <Text style={styles.headerTitle}>Chats</Text>

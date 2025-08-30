@@ -1,11 +1,24 @@
-import { View, Text } from "react-native";
-import React from "react";
+import React, { useState } from "react";
+import SwiperFlatList from "react-native-swiper-flatlist";
+import { VideoData } from "./Database";
+import SingleVideo from "./SingleVideo";
 
 const FeedComponents = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleChangeIndex = (index: number) => {
+    setCurrentIndex(index);
+  };
   return (
-    <View>
-      <Text>FeedComponents</Text>
-    </View>
+    <SwiperFlatList
+      data={VideoData}
+      vertical={true}
+      onChangeIndex={({ index }) => handleChangeIndex(index)}
+      renderItem={({ item, index }) => (
+        <SingleVideo item={item} index={index} currentIndex={currentIndex} />
+      )}
+      keyExtractor={(_item, index) => index.toString()}
+    />
   );
 };
 
