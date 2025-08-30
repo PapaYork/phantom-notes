@@ -1,47 +1,42 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import React from "react";
+import { Feather } from "@expo/vector-icons";
+import { Colors } from "../../../constants/Colors";
 import { SafeAreaView } from "react-native-safe-area-context";
+import FeedComponents from "../../../components/FeedComponents";
 
-export default function FeedScreen() {
+const Feed = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Feed</Text>
-      </View>
-      <View style={styles.content}>
-        <Text style={styles.subtitle}>Your feed content will appear here</Text>
+    <SafeAreaView style={[styles.container]}>
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>Feed</Text>
+          <TouchableOpacity>
+            <Feather name="camera" size={27} color={Colors.accent} />
+          </TouchableOpacity>
+        </View>
+        <FeedComponents />
       </View>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "black",
   },
   header: {
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: "#E9EDEF",
-    height: 44, // WhatsApp header height
-    justifyContent: "center",
+    position: "relative",
+    justifyContent: "space-between",
+    flexDirection: "row",
+    paddingHorizontal: 20,
+    zIndex: 10,
   },
-  title: {
-    fontSize: 17,
-    fontWeight: "600",
-    color: "#000000",
-    lineHeight: 22,
-  },
-  content: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 20,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: "#8E8E93",
-    textAlign: "center",
+  headerTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: Colors.accent,
   },
 });
+export default Feed;

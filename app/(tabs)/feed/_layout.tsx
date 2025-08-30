@@ -1,16 +1,18 @@
 import { Stack } from "expo-router";
-import React from "react";
 
-export default function FeedLayout() {
+const Layout = () => {
   return (
     <Stack>
       <Stack.Screen
         name="index"
         options={{
-          title: "My Feed",
-          headerShown: true,
+          title: "",
+          headerLargeTitle: true,
+          headerShown: false,
         }}
       />
     </Stack>
   );
-}
+};
+
+export default Layout;
